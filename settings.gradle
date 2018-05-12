@@ -1,0 +1,1 @@
+include ':app', ':xutils', ':refreshLayout', ':jjdxm-ijkplayer', ':pickerview', ':PhotoPicker', ':library'
