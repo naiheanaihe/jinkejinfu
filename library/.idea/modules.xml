@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../IMKit/IMKit.iml" filepath="$PROJECT_DIR$/../IMKit/IMKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IMLib/IMLib.iml" filepath="$PROJECT_DIR$/../IMLib/IMLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JinShe/JinShe.iml" filepath="$PROJECT_DIR$/../JinShe/JinShe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MyApplication.iml" filepath="$PROJECT_DIR$/../MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PhotoPicker/PhotoPicker.iml" filepath="$PROJECT_DIR$/../PhotoPicker/PhotoPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library.iml" filepath="$PROJECT_DIR$/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pickerview/pickerview.iml" filepath="$PROJECT_DIR$/../pickerview/pickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../refreshLayout/refreshLayout.iml" filepath="$PROJECT_DIR$/../refreshLayout/refreshLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vitamio/vitamio.iml" filepath="$PROJECT_DIR$/../vitamio/vitamio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xutils/xutils.iml" filepath="$PROJECT_DIR$/../xutils/xutils.iml" />
+    </modules>
+  </component>
+</project>
