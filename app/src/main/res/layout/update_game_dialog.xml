@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="300dp"
+        android:layout_height="335dp"
+        android:background="@drawable/img_update_game"/>
+    <ImageView
+        android:id="@+id/cha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/img"
+        android:src="@drawable/img_cha"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/xiangq"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:text="查看详情"
+        android:textColor="@color/red"
+        android:layout_alignBottom="@id/img"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/biankuang_bk_red"
+        android:gravity="center"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_xiangsi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/xiangq"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

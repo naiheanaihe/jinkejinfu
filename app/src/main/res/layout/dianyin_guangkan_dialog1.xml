@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/biankuang_bk_white_shixin">
+    <ImageView
+        android:id="@+id/cha"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:src="@drawable/cha"
+        android:layout_gravity="right"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp"/>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的免费观影券剩余 "
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 张"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/zhuche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="注册会员获得更多免费观影券"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/red"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/queren"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:background="@drawable/denglu_biankuang"
+        android:text="确  认"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"/>
+</LinearLayout>

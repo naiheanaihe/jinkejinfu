@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/group_tuijian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/fengexian2">
+        <RadioButton
+            android:id="@+id/btn_type3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="热门"
+            android:textColor="@color/sel_btn_hehuocolor"
+            android:background="@drawable/selector_xiahuaxian"
+            android:layout_marginLeft="10dp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/btn_type2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="精品"
+            android:textColor="@color/sel_btn_hehuocolor"
+            android:background="@drawable/selector_xiahuaxian"
+            android:layout_marginLeft="10dp"/>
+        <RadioButton
+            android:id="@+id/btn_type4"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="折扣"
+            android:textColor="@color/sel_btn_hehuocolor"
+            android:background="@drawable/selector_xiahuaxian"
+            android:layout_marginLeft="10dp"/>
+        <RadioButton
+            android:id="@+id/btn_type1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:button="@null"
+            android:text="全部"
+            android:gravity="center"
+            android:textColor="@color/sel_btn_hehuocolor"
+            android:background="@drawable/selector_xiahuaxian"/>
+    </RadioGroup>
+    <cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout
+        android:id="@+id/nestlayou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_tuijian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout>
+
+</LinearLayout>

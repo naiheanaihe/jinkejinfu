@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_taojinke"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jinkejinfuapplication.taojinke.TaojinkeActivity">
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:visibility="visible"/>
+    <RadioGroup
+        android:id="@+id/rg_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_tab_top_line"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_taojinke"
+            style="@style/tab_main_btn"
+            android:drawableTop="@drawable/tab_taojinke_btn"
+            android:text="淘金客"
+            android:visibility="visible"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_huiyuan"
+            style="@style/tab_main_btn"
+            android:drawableTop="@drawable/tab_huiyuan_btn"
+            android:text="会员 "
+            />
+
+        <RadioButton
+            android:id="@+id/rb_hehuo"
+            style="@style/tab_main_btn"
+            android:drawableTop="@drawable/tab_hehuo_btn"
+            android:text="合伙人"
+            android:visibility="visible"/>
+        <RadioButton
+            android:id="@+id/rb_tuijian"
+            style="@style/tab_main_btn"
+            android:drawableTop="@drawable/tab_tuijian_btn"
+            android:text="推荐分享"
+            android:visibility="visible"/>
+    </RadioGroup>
+</LinearLayout>

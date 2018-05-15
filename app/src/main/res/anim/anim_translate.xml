@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    >
+    <!-- 
+    android:duration
+动画的持续时间(以毫秒为单位)
+android:fillAfter
+当设置为true时，动画保持结束时的状态。默认为false，动画完成之后返回最初的状态
+android:repeatCount
+重复的次数。
+android:startOffset
+动画之间的时间
+Android:repeatMode
+定义重复的行为，1表示重新开始，2表示从最后一个状态往回逆序播放
+     -->
+    <translate 
+        android:fromXDelta="0%p"
+        android:toXDelta="100%p"
+        android:fromYDelta="0"
+        android:toYDelta="0"
+        android:duration="3000"
+        android:repeatCount="2"
+        android:repeatMode="reverse"
+        android:fillAfter="true"
+        />
+	<alpha
+	    android:fromAlpha="0"
+	    android:toAlpha="1"
+	    android:duration="3000"
+	    android:repeatCount="2"
+	    android:repeatMode="reverse"
+        android:fillAfter="true"
+	    />
+</set>

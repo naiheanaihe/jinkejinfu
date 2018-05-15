@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  >
+        <shape>
+            <solid android:color="@color/transparent" />
+
+        </shape>
+    </item>
+    <item android:left="82dp"
+        android:width="13dp"
+        android:height="10dp" android:gravity="center_vertical">
+        <bitmap android:src="@drawable/arrow_bttom_shenhui"
+            />
+    </item>
+
+</layer-list>

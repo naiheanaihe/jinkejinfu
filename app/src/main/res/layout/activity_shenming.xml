@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shenming"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jinkejinfuapplication.mine.ShenmingActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="免责申明"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/tolbar_color"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+    <TextView
+        style="@style/fengexian" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tolbar_color"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="1. 除金客金福注明之服务条款外，其它因使用金客金福而导致任何意外、疏忽、合约毁坏、诽谤、版权或知识 产权侵犯及其所造成的各种损失（包括因下载而感染电脑病毒），金客金福概不负责，亦不承担任何法律责任。\n\n2. 任何透过金客金福网页链接及得到的资讯、产品及服务，金客金福概不负责，亦不负任何法律责任。\n\n3. 金客金福内所有内容并不反映任何金客金福之意见及观点。\n\n4. 金客金福认为，一切网民在进入金客金福主页及各层页面时已经仔细看过本条款并完全同意。 敬请谅解。"/>
+</LinearLayout>

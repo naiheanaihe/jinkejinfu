@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:background="@color/white">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:collapsedTitleGravity="center"
+            app:expandedTitleMarginBottom="60dp"
+            app:expandedTitleMarginStart="135dp"
+            app:expandedTitleMarginTop="0dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@null">
+            <com.example.jinkejinfuapplication.view.Mybanner
+                android:id="@+id/inforpager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:rollviewpager_play_delay="3000" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门推荐"
+            android:textColor="@color/tolbar_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+        <cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout
+            android:id="@+id/nestlayou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_shiping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+        </cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

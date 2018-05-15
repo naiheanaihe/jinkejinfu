@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jinkejinfuapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_jinkejinfu"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a20c20df29d9879b200018c" />
+        <meta-data
+            android:name="5a20c20df29d9879b200018c"
+            android:value="YOUR_APP_KEY" />
+        <meta-data
+            android:name="jinkejinfu"
+            android:value="Channel ID" />
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".xiangq.ShouyouActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity android:name=".xiangq.ZixunActivity" />
+        <activity android:name=".xiangq.YeyouActivity" />
+        <activity
+            android:name=".xiangq.ShipingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".xiangq.VRActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".shiping.DianyingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".mine.LoginActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".mine.ShezhiActivity" />
+        <activity android:name=".mine.ZhanghaoActivity" />
+        <activity android:name=".mine.KefuActivity" />
+        <activity android:name=".mine.ShenmingActivity" />
+        <activity android:name=".mine.GuanyuActivity" />
+        <activity android:name=".mine.Xiugai_pwActivity" />
+        <activity
+            android:name=".xiangq.CeshiActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        //新浪
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        //qq
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        //微信
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".taojinke.TaojinkeActivity" />
+        <activity android:name=".mine.MineActivity" />
+        <activity android:name=".taojinke.Huiyuan_zhaomuActivity" />
+        <activity android:name=".taojinke.Hehuo_zhaomuActivity" />
+        <activity
+            android:name=".taojinke.hehuoren.Hehuo_zhuceActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".taojinke.hehuoren.Hehuo_zhifuActivity" />
+        <activity android:name=".taojinke.huiyuan.MyVIPActivity" />
+        <activity android:name=".taojinke.hehuoren.MyhehuorenActivity" />
+        <activity android:name=".taojinke.huiyuan.Fensi_jiangliActivity" />
+        <activity android:name=".taojinke.huiyuan.Fensi_leijiActivity" />
+        <activity android:name=".mine.MyzhanghuActivity" />
+        <activity android:name=".mine.MymingxiActivity" />
+        <activity android:name=".taojinke.huiyuan.Mingxi_huiyuanActivity" />
+        <activity android:name=".taojinke.hehuoren.Mingxi_hehuorenActivity" />
+        //支付宝支付
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        //微信支付回调
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx77d12735d5c6e0c4" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mine.FindpwActivity" />
+        <activity android:name=".shouye.SeachActivity" />
+
+        <service android:name=".VersionService" />
+
+        <activity android:name=".taojinke.huiyuan.ChoujiangActivity" />
+        <activity android:name=".taojinke.huiyuan.Jifen_jiangliActivity" />
+        <activity
+            android:name=".xiangq.StartActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".shouye.More_zixunActivity" />
+        <activity android:name=".taojinke.TixianActivity" />
+        <activity android:name=".taojinke.TixianJiluActivity" />
+        <activity android:name=".xiangq.ZhoubianActivity" />
+        <activity
+            android:name=".shouye.hudong.HudongActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".shouye.hudong.HuatiActivity" />
+        <activity android:name=".shouye.hudong.MyHuifuAndLiuyinActivity" />
+        <activity
+            android:name=".shouye.hudong.AddHuatiActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".shouye.huodong.HuodongActivity" />
+        <activity android:name=".shouye.huodong.Shouyou_libaoActivity" />
+        <activity android:name=".shouye.huodong.Vip_libaoActivity" />
+        <activity android:name=".shouye.huodong.Huodong_tuijianActivity" />
+        <activity android:name=".shouye.huodong.Huodong_chongzhiActivity" />
+        <activity android:name=".shouye.hudong.AddWendaActivity" />
+        <activity android:name=".shouye.hudong.AddLiuyinActivity" />
+        <activity android:name=".shouye.hudong.MyFenxiangAndHuatiActivity" />
+        <activity android:name=".shouye.hudong.WendaActivity" />
+        <activity
+            android:name=".shouye.hudong.LiuyinActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".shouye.hudong.MyhuifuAndWendaActivity" />
+        <activity android:name=".shouye.dianjing.DianjingActivity" />
+        <activity android:name=".shouye.dianjing.SaishiActivity" />
+        <activity android:name=".shouye.dianjing.XinwenActivity" />
+        <activity android:name=".shouye.dianjing.Saishi_shipingActivity" />
+        <activity android:name=".shouye.dianjing.Shiping_saishiActivity" />
+        <activity android:name=".shouye.dianjing.Saishi_xiangqActivity" />
+        <activity android:name=".shouye.WangzhuanActivity" />
+        <activity android:name=".shouye.ShangchengActivity" />
+        <activity android:name=".shouye.Youxi_zhiboActivity" />
+        <activity android:name=".shouye.Zhibo_xiangqActivity"></activity>
+    </application>
+
+</manifest>
