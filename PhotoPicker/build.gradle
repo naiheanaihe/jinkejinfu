@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion 24
+  buildToolsVersion "24.0.0"
+  resourcePrefix "__picker_"
+
+  defaultConfig {
+    minSdkVersion 10
+    targetSdkVersion 23
+    versionCode 1
+    versionName "0.8.5"
+  }
+}
+apply from: '../gradle/gradle-mvn-push.gradle'
+
+dependencies {
+  compile 'com.android.support:design:24.2.0'
+  compile 'com.nineoldandroids:library:2.4.0'
+  compile 'com.github.bumptech.glide:glide:3.7.0'
+}
+
