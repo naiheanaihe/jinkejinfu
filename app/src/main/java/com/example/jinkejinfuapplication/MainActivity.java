@@ -86,6 +86,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     private FragmentTransaction ft;
     private ImageView mine,search;
     private TextView myname;
+
     //更新
     private int currentV=0, newV=0;
     private JSONObject jo_v;

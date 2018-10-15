@@ -1,1 +1,1 @@
-include ':app', ':xutils', ':refreshLayout', ':jjdxm-ijkplayer', ':pickerview', ':PhotoPicker', ':library'
+include ':app', ':xutils', ':refreshLayout', ':jjdxm-ijkplayer', ':pickerview', ':PhotoPicker', ':library', ':MyCeshi'
