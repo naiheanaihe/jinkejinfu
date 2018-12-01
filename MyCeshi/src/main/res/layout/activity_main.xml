@@ -14,6 +14,18 @@
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:text="He"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="He"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="He"
+        android:visibility="invisible"/>
     <ImageView
         android:id="@+id/img"
         android:layout_width="150dp"

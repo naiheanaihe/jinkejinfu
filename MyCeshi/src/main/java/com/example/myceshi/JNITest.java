@@ -1,10 +1,10 @@
 package com.example.myceshi;
 
 /**
- * Created by naihe on 2018/10/14.
+ * Created by naihe on 2018/10/17.
  */
 
 public class JNITest {
 
-    public static native String getceshi();
+    private native String jniTellMeWhy(String hiJni);
 }
